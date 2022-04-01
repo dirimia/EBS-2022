@@ -1,0 +1,32 @@
+publications: 100
+subscriptions: 200
+fields:
+  company:
+    type: str
+    choices: [Google, Apple, Microsoft, Amazon, Netflix, Facebook, Nvidia, AMD, Tesla]
+    frequency: 0.7
+    equals: 0.8
+    operators: ["=", "<>"]
+  value:
+    type: double
+    min: 1.0
+    max: 1000.0
+    frequency: 0.2
+    operators: ["=", "<", "<=", ">", ">=", "<>"]
+  drop:
+    type: double
+    min: 1.0
+    max: 200.0
+    frequency: 0.3
+    operators: ["=", "<", "<=", ">", ">=", "<>"]
+  variation:
+    type: double
+    min: 0.1
+    max: 2.0
+    frequency: 0.15
+    operators: ["=", "<", "<=", ">", ">=", "<>"]
+  date:
+    type: str
+    choices: [02.02.2022, 03.02.2022, 04.02.2022, 05.02.2022, 06.02.2022, 07.02.2022]
+    frequency: 0.5
+    operators: ["=", "<", "<=", ">", ">=", "<>"]
